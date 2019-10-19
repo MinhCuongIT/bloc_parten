@@ -1,3 +1,4 @@
+import 'package:bloc_parten/bloc_page.dart';
 import 'package:bloc_parten/repository.dart';
 import 'package:bloc_parten/scope_model_page.dart';
 import 'package:bloc_parten/valilla_page.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 //      home: MyHomePage(title: 'Bloc Partern'),
-      home: UserModelScreen(_repository),
+      home: UserBlocScreen(_repository),
     );
   }
 }

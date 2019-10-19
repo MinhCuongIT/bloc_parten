@@ -9,7 +9,7 @@ class UserBloc {
   final Repository _repository;
 
   final _userStreamController = StreamController<UserState>();
-
+  
   Stream<UserState> get user => _userStreamController.stream;
 
   void loadUserData() {
